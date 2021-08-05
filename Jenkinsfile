@@ -17,6 +17,7 @@ agent any
         stage ('Deploy') { 
             steps{
                 echo 'This is Deploy stage'
+                sh 'mkdir /var/www/saad-pipeline'
                 sh 'cp index.html /var/www/saad-pipeline'
             }
         }         
